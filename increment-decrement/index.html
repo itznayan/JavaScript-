@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>increment Decrement</title>
+    <style>
+      #countLabel {
+        display: block;
+        text-align: center;
+        font-size: 10rem;
+      }
+      div {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+      }
+      button {
+        padding: 10px;
+        border-radius: 15px;
+        color: white;
+        background-color: blueviolet;
+        border-color: white;
+      }
+      button:hover {
+        background-color: rgb(72, 13, 127);
+      }
+    </style>
+  </head>
+  <body>
+    <label for="" id="countLabel">0</label>
+    <div id="btnContainer">
+      <button id="decBtn">Decrease</button>
+      <button id="reset">Reset</button>
+      <button id="incBtn">Increase</button>
+    </div>
+    <script>
+      const decBtn = document.getElementById("decBtn");
+      const reset = document.getElementById("reset");
+      const incBtn = document.getElementById("incBtn");
+
+      const countLabel = document.getElementById("countLabel");
+      let count = 0;
+
+      incBtn.onclick = function () {
+        count++;
+        countLabel.textContent = count;
+      };
+      decBtn.onclick = function () {
+        count--;
+        countLabel.textContent = count;
+      };
+      reset.onclick = function () {
+        count = 0;
+        countLabel.textContent = count;
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      button {
+        padding: 10px;
+        background-color: blueviolet;
+        color: white;
+        font-weight: 100;
+        border: none;
+        border-radius: 10px;
+      }
+      button:hover {
+        color: white;
+        font-size: 16px;
+        background-color: blue;
+        transition: all 600ms ease-in-out;
+      }
+      label {
+        font-size: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="myBtn">Generate Number</button>
+
+    <label for="" class="myLabels" id="myLabel1"></label>
+    <label for="" class="myLabels" id="myLabel2"></label>
+    <label for="" class="myLabels" id="myLabel3"></label>
+
+    <script>
+      document.getElementById("myBtn");
+      document.getElementById("myLabel1");
+      document.getElementById("myLabel2");
+      document.getElementById("myLabel3");
+
+      const min = 1;
+      const max = 9;
+
+      let radomNum1;
+      let radomNum2;
+      let radomNum3;
+
+      myBtn.onclick = function () {
+        radomNum1 = Math.floor(Math.random() * max) + min;
+        radomNum2 = Math.floor(Math.random() * max) + min;
+        radomNum3 = Math.floor(Math.random() * max) + min;
+        myLabel1.textContent = radomNum1;
+        myLabel2.textContent = radomNum2;
+        myLabel3.textContent = radomNum3;
+      };
+
+      //let randomNum = Math.floor(Math.random() * 6);
+      //
+      //let randomNum1 = Math.floor(Math.random() * 6);
+      //
+      //console.log(`this is Random Values ${randomNum}   ${randomNum1}`);
+      //const max = 100;
+      //const min = 1;
+      //
+      //let radomNum = Math.floor(Math.random() * (max - min) + min);
+      //console.log(radomNum);
+    </script>
+  </body>
+</html>

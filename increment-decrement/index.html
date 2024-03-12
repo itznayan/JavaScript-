@@ -19,7 +19,7 @@
         justify-content: center;
       }
       button {
-        transition: all 600ms ease-in-out;
+        transition: all 350ms ease-in-out;
         padding: 10px;
         border-radius: 15px;
         color: white;
@@ -31,27 +31,33 @@
         filter: opacity(1);
         scale: 1.2;
         color: white;
+
       }
       button:not(hover) {
         scale: 0.9;
         filter: opacity(0.8);
-
         color: white;
+      }
+
+
       }
     </style>
   </head>
   <body>
     <label for="" id="countLabel">0</label>
     <div id="btnContainer">
+      <button id="dec10">-10</button>
       <button id="decBtn">Decrease</button>
       <button id="reset">Reset</button>
       <button id="incBtn">Increase</button>
+      <button id="inc10">+10</button>
     </div>
     <script>
       const decBtn = document.getElementById("decBtn");
       const reset = document.getElementById("reset");
       const incBtn = document.getElementById("incBtn");
-
+      const inc10 = document.getElementById("inc10");
+      const dec10 = document.getElementById("dec10");
       const countLabel = document.getElementById("countLabel");
       let count = 0;
 
@@ -65,6 +71,16 @@
       };
       reset.onclick = function () {
         count = 0;
+        countLabel.textContent = count;
+      };
+
+      inc10.onclick = function () {
+        count += 10;
+        countLabel.textContent = count;
+      };
+
+      dec10.onclick = function () {
+        count -= 10;
         countLabel.textContent = count;
       };
     </script>

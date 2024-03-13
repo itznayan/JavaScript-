@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function</title>
+  </head>
+  <body>
+    <script>
+      function happyBirthDay(username, age) {
+        for (let i = 5; i > 1; i--) {
+          console.log(`${username} happy BirthDay  `);
+          console.log(`happy BirthDay  ${age}`);
+        }
+      }
+      happyBirthDay("greet", 19);
+
+      function isEven(number) {
+        return number % 2 === 0 ? true : false;
+      }
+      console.log(isEven(1));
+
+      function isValidEmail(email) {
+        if (email.includes("@")) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+
+      console.log(isValidEmail("kn@gmila.comn"));
+    </script>
+  </body>
+</html>

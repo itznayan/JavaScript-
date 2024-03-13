@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>While and do while</title>
+  </head>
+  <body>
+    <script>
+      let loggedIn = false;
+      let username;
+      let password;
+      while (!loggedIn) {
+        username = window.prompt(`Enter Your Username`);
+        password = window.prompt(`Enter Your Password`);
+
+        if (username === "oreki" && password === "oreki") {
+          loggedIn = true;
+          console.log("You are log in");
+        } else {
+          console.log("invalid");
+        }
+      }
+    </script>
+  </body>
+</html>

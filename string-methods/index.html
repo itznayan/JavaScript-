@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let userName = "  Orekier is Here ";
+      console.log(userName.charAt(0));
+      console.log(userName.indexOf("e"));
+      console.log(userName.length);
+      userName = userName.trim();
+      console.log(userName); //This is after trim
+      console.log(userName.charAt(0));
+
+      console.log(userName.toLowerCase());
+      console.log(userName.toUpperCase());
+      userName = userName.repeat(2);
+      console.log(userName);
+
+      let result = userName.startsWith("O");
+      console.log(result);
+      console.log(userName);
+      let result1 = userName.endsWith(" ");
+      console.log(result1);
+
+      includesMethod = userName.includes(" ");
+      console.log(includesMethod);
+    </script>
+  </body>
+</html>

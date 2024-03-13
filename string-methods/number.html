@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number In strings</title>
+  </head>
+  <body>
+    <script>
+      let phoneNumber = "180-888-8885";
+      phoneNumber = phoneNumber.replaceAll("-", "/");
+      console.log(phoneNumber);
+      phoneNumber = phoneNumber.padStart(15, "0"); //how many number string have
+      console.log(phoneNumber);
+      phoneNumber = phoneNumber.padEnd(20, "/");
+      console.log(phoneNumber);
+    </script>
+  </body>
+</html>

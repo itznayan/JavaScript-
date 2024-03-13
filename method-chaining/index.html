@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>no Method Chaning</title>
+  </head>
+  <body>
+    <script>
+      //
+      let username = window.prompt(`Enter Username:`);
+      let letter = username.charAt(0);
+      letter = letter.toUpperCase();
+
+      let extraChars = username.slice(1);
+      extraChars = extraChars.toLowerCase();
+      username = letter + extraChars;
+      console.log(username);
+    </script>
+  </body>
+</html>

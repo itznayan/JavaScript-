@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mappings</title>
+  </head>
+  <body>
+    <script>
+      const student = ["Hiren", "Champak", "Jetho", "Babar", "Humayu"];
+      const studentLower = student.map(lowerCase);
+      const studentUpper = student.map(upperCase);
+      console.log(studentLower);
+      console.log(studentUpper);
+      function upperCase(element) {
+        return element.toUpperCase();
+      }
+      function lowerCase(element) {
+        return element.toLowerCase();
+      }
+    </script>
+  </body>
+</html>

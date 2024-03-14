@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const dates = ["2024-1-15", "2024-2-14", "2026-2-14"];
+      const formattedDates = dates.map(formatDates);
+      console.log(formattedDates);
+
+      function formatDates(element) {
+        const parts = element.split("-");
+        return `${parts[1]}/${parts[2]} / ${parts[0]} , `;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For Each In Array</title>
+  </head>
+  <body>
+    <script>
+      let fruits = ["apple", "banana", "oarage", "coconut", "pinuts"];
+
+      fruits.forEach(capitalize);
+      fruits.forEach(display);
+
+      function capitalize(element, index, array) {
+        array[index] = element.charAt(0).toUpperCase() + element.slice(1);
+      }
+      function display(element) {
+        console.log(element);
+      }
+    </script>
+  </body>
+</html>

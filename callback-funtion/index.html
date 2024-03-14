@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Callback Funtion</title>
+  </head>
+  <body>
+    <script>
+      hello(leave);
+
+      function hello(callback) {
+        console.log("Hello");
+        callback();
+      }
+      function leave() {
+        console.log("leave");
+      }
+      function goodbye() {
+        console.log("Good Wala Bye");
+      }
+    </script>
+  </body>
+</html>

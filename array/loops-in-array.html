@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let fruit = ["mango", "aplle", "orange", "banana"];
+      for (let i = 0; i < fruit.length; i++) {
+        console.log(fruit[i]);
+      }
+      console.log("DIFF METHOD");
+      for (let x of fruit) {
+        console.log(x);
+      }
+
+      console.log(fruit.sort().reverse());
+      console.log(fruit.sort());
+
+      let num = [1, 5, 2, 3, 4, 8, 9, 7];
+      console.log(num);
+      console.log(num.sort());
+      console.log(num.sort().reverse());
+    </script>
+  </body>
+</html>

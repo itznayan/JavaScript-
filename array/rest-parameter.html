@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function openFridge(...foods) {
+        console.log(foods);
+        console.log(...foods);
+      }
+      function getFood(...foods) {
+        return foods;
+      }
+      let food = "pizza";
+      let food1 = "hamburger";
+      let food2 = "paratha";
+      let food3 = "sushi";
+      openFridge(food, food1, food2, food3);
+
+      const foods = getFood(food, food1, food3);
+      console.log(foods);
+    </script>
+  </body>
+</html>

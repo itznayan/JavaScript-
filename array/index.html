@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let fruit = ["aplle", "orange", "banana"];
+      console.log(fruit);
+      fruit[1] = "coconut";
+      console.log(fruit[0]);
+      console.log(fruit[1]);
+      fruit.push("apple"); //add element at the end
+      fruit.pop("apple"); //remove last element
+      fruit.unshift("mango"); //add element at start
+      console.log(fruit);
+      fruit.shift("mango"); //remove start element at start
+      console.log(fruit);
+
+      let numOfFruits = fruit.length;
+      console.log(numOfFruits);
+      let index = fruit.indexOf("coconut");
+      console.log(index);
+    </script>
+  </body>
+</html>

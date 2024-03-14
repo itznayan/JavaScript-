@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spread Operator</title>
+  </head>
+  <body>
+    <script>
+      // allow to unpack the elements
+      let num = [1, 5, 2, 3, 4, 8, 9, 7];
+      let max = Math.max(...num);
+      console.log(max);
+      let min = Math.min(...num);
+      console.log(min);
+      let username = "Engineer";
+      console.log(username);
+      let letter = [...username];
+      console.log(letter);
+
+      let letter1 = [...username].join("-");
+      console.log(letter1);
+
+      let fruit = ["aplle", "orange", "banana"];
+      console.log(fruit);
+      let veg = ["carrot", "celery", "propotoes"];
+      let newFruit = [...fruit, ...veg, "egg", "milk"];
+      console.log(newFruit);
+    </script>
+  </body>
+</html>

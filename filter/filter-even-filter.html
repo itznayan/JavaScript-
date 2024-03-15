@@ -4,14 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Filtering Even Number</title>
+    <style>
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+    </style>
   </head>
   <body>
+    <p id="myP"></p>
+
+    <p id="myP1"></p>
     <script>
       let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
       let evenNums = numbers.filter(isEven);
       console.log(evenNums);
+      document.getElementById(
+        "myP"
+      ).textContent = `This is Even Number : ${evenNums}`;
+
       let oddNums = numbers.filter(isOdd);
       console.log(oddNums);
+      document.getElementById(
+        "myP1"
+      ).textContent = `This is a Odd Number : ${oddNums}`;
       function isEven(element) {
         return element % 2 === 0;
       }

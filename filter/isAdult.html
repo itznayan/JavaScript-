@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="child"></p>
+    <p id="adult">this is list of adult :</p>
+    <script>
+      const ages = [12, 10, 11, 13, 16, 45, 20, 21, 30, 22, 34];
+      const adults = [ages.filter(isAdult)];
+      const child = [ages.filter(isChild)];
+      function isChild(element) {
+        return element <= 18;
+      }
+      document.getElementById(
+        "child"
+      ).textContent = `This is list of Child: ${child}`;
+
+      console.log(child);
+      function isAdult(element) {
+        return element >= 18;
+      }
+
+      console.log(adults);
+
+      document.getElementById(
+        "adult"
+      ).textContent = `This is list of Adullts: ${adults}`;
+    </script>
+  </body>
+</html>

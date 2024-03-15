@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>reduce method in JS</title>
+  </head>
+  <body>
+    <script>
+      const grade = [75, 53, 54, 86, 40, 79, 42, 30, 32, 21, 29, 80];
+      const maximum = grade.reduce(getMaximum);
+      const minimum = grade.reduce(getMinimum);
+
+      function getMaximum(accumilator, element) {
+        return Math.max(accumilator, element);
+      }
+      console.log(maximum);
+
+      function getMinimum(accumilator, element) {
+        return Math.min(accumilator, element);
+      }
+
+      console.log(minimum);
+    </script>
+  </body>
+</html>

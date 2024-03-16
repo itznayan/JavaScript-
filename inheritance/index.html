@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inheritance</title>
+  </head>
+  <body>
+    <script>
+      class Animal {
+        alive = true;
+        eat() {
+          console.log(`${this.name} is eating`);
+        }
+        sleep() {
+          console.log(`${this.name} is sleeping`);
+        }
+      }
+
+      class Rabbit extends Animal {
+        name = "rabbit";
+        run() {
+          console.log(`${this.name} Is Running  The Marathon`);
+        }
+      }
+
+      class Fish extends Animal {
+        name = "fish";
+      }
+      const rabbit = new Rabbit();
+      const fish = new Fish();
+      console.log(rabbit.alive);
+      rabbit.eat();
+      rabbit.run();
+      fish.sleep();
+    </script>
+  </body>
+</html>

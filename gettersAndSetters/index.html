@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Getters And Setters</title>
+  </head>
+  <body>
+    <script>
+      class Rectangle {
+        constructor(width, height) {
+          this.width = width;
+          this.height = height;
+        }
+        set width(newWidth) {
+          if (newWidth > 0) {
+            this._width = newWidth;
+          } else {
+            console.error("Width mush postive");
+          }
+        }
+
+        set height(newHeight) {
+          if (newHeight > 0) {
+            this._height = newHeight;
+          } else {
+            console.error("Width mush postive");
+          }
+        }
+        get width() {
+          return `${this._width.toFixed(2)} cm`;
+        }
+        get height() {
+          return `${this._height.toFixed(2)} cm`;
+        }
+        get area() {
+          return `${(this._width * this._height).toFixed(2)} cm^2`;
+        }
+      }
+      const rectangle = new Rectangle(50, 10);
+      console.log(rectangle.width);
+      console.log(rectangle.height);
+      //
+      console.log(rectangle.area);
+    </script>
+  </body>
+</html>

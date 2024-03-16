@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super Keyword</title>
+  </head>
+  <body>
+    <script>
+      class Animal {
+        constructor(name, age) {
+          this.name = name;
+          this.age = age;
+        }
+        move() {
+          console.log(`This is a ${this.name} . `);
+        }
+      }
+      class Rabbit extends Animal {
+        constructor(name, age, runSpeed) {
+          super(name, age);
+
+          this.runSpeed = runSpeed;
+        }
+      }
+      class Fish extends Animal {
+        constructor(name, age, swimSpeed) {
+          super(nane, age);
+
+          this.swimSpeed = swimSpeed;
+        }
+      }
+
+      const rabbit = new Rabbit("rabbit", 12, 34);
+      console.log(rabbit.name);
+      console.log(rabbit.runSpeed);
+      console.log(rabbit.age);
+      rabbit.move();
+    </script>
+  </body>
+</html>

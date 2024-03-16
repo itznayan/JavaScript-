@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Getters And Setters 2</title>
+  </head>
+  <body>
+    <script>
+      class Person {
+        constructor(firstName, lastName, age) {
+          this.firstName = firstName;
+          this.lastName = lastName;
+          this.age = age;
+        }
+        set firstName(newFirstName) {
+          if (typeof newFirstName === "string" && newFirstName.length > 0) {
+            this._firstName = newFirstName;
+          } else {
+            console.error(`Please Enter a Valid F Name`);
+          }
+        }
+
+        set lastName(newLastName) {
+          if (typeof newLastName === "string" && newLastName.length > 0) {
+            this._lastName = newLastName;
+          } else {
+            console.error(`Please Enter a Valid L Name`);
+          }
+        }
+
+        set age(newAge) {
+          if (typeof newAge === "number" && newAge > 0) {
+            this._age = newAge;
+          } else {
+            console.error("Enter A Number");
+          }
+        }
+
+        get firstName() {
+          return this._firstName;
+        }
+        get lastName() {
+          return this._lastName;
+        }
+        get age() {
+          return this._age;
+        }
+        get fullName() {
+          return `${this._lastName} ${this._firstName}  `;
+        }
+      }
+
+      const person = new Person("Rahul", "KL", 29);
+      console.log(person.firstName);
+      console.log(person.lastName);
+      console.log(person.age);
+      console.log(person.fullName);
+    </script>
+  </body>
+</html>

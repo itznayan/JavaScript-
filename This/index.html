@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>This Keyword</title>
+  </head>
+  <body>
+    <script>
+      const person1 = {
+        name: "bharat",
+        favFood: "pizza",
+        sayNamste: function () {
+          console.log(
+            `Namste From Person 1 Say Hi from ${this.name} iam Eating ${this.favFood}`
+          );
+        },
+      };
+
+      person1.sayNamste();
+      console.log(this);
+    </script>
+  </body>
+</html>

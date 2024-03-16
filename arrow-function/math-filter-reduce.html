@@ -6,6 +6,25 @@
     <title>Math Reduce Filter In Arrow</title>
   </head>
   <body>
-    <script></script>
+    <script>
+      const number = [1, 2, 3, 4, 5, 6, 9, 7, 8];
+      const squres = number.map((element) => Math.pow(element, 2));
+      console.log(squres);
+
+      const cube = number.map((element) => Math.pow(element, 3));
+      console.log(cube);
+
+      const evenNumbers = number.filter((element) => element % 2 === 0);
+      console.log(evenNumbers);
+
+      const oddNumbers = number.filter((element) => element % 2 !== 0);
+      console.log(oddNumbers);
+
+      const total = number.reduce(
+        (accumilator, element) => accumilator + element
+      );
+
+      console.log(total);
+    </script>
   </body>
 </html>

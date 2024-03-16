@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object</title>
+  </head>
+  <body>
+    <script>
+      const person = {
+        firstName: "Bharat",
+        lastName: "Hindu",
+        age: 20,
+        isEmployed: true,
+        sayNamste: function () {
+          console.log("Namte From Bharat & I am only Person");
+        },
+        sayNamsteArrow: () => {
+          console.log("Namste Form Arrow Function");
+        },
+      };
+
+      const person2 = {
+        fistName: "Surya",
+        lastName: "Punjabi",
+        age: 35,
+        isEmployed: false,
+        sayNamste: function () {
+          console.log("Namte From Surya & I am Person 2");
+        },
+        sayEating: (food, cost) => {
+          console.log(`I am Eating ${food} Right Now  That Cost Me ${cost}$ `);
+        },
+      };
+
+      console.log(person.firstName);
+      console.log(person.lastName);
+      console.log(person.age);
+      console.log(person.isEmployed);
+      person.sayNamste();
+      person2.sayNamste();
+      person.sayNamsteArrow();
+      person2.sayEating("Burger", 10);
+    </script>
+  </body>
+</html>

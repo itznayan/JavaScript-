@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function person(firstName, lastName, age) {
+        this.firstName = firstName;
+        this.age = age;
+        this.lastName = lastName;
+      }
+      const person1 = new person("Hemnat", "sodhi", 10);
+      const person2 = new person("Manish", "mehta", 16);
+      const { firstName, lastName, age } = person1;
+      console.log(firstName);
+      console.log(lastName);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function createGame() {
+        let score = 0;
+        function inScore(points) {
+          score += points;
+          console.log(`+${points} pts`);
+        }
+
+        function DecScore(points) {
+          score -= points;
+          console.log(`-${points} pts`);
+        }
+        function getScore() {
+          return score;
+        }
+        return { inScore, DecScore, getScore };
+      }
+      const game = createGame();
+      game.inScore(10);
+      game.DecScore(4);
+
+      console.log(`Get Points ${game.getScore()}`);
+    </script>
+  </body>
+  s
+</html>

@@ -1,0 +1,71 @@
+body {
+  text-align: center;
+  font-family: Verdana;
+  background-image: url(https://images.unsplash.com/photo-1708649290066-5f617003b93f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  backdrop-filter: blur(2px);
+
+}
+
+h1 {
+  font-size: 3rem;
+  color: rgba(32, 31, 29, 0.632);
+}
+
+
+
+#clock {
+  background-color: whitesmoke;
+  padding: 10px;
+  font-size: 40px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 5px solid #000000a5;
+  width: 20%;
+  border-radius: 30px;
+}
+
+button {
+  position: relative;
+  bottom: 10px;
+  border: none;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+  font-weight: 600;
+  scale: 1.3;
+  margin-left: 15px;
+}
+
+
+button:active {
+  scale: 1.2;
+  transition: all 300ms ease-in-out;
+  color: black;
+}
+
+button:nth-child(1) {
+  background-color: hsla(120, 86%, 43%, 0.862);
+}
+
+button:nth-child(2) {
+  background-color: hsla(8, 86%, 43%, 0.862);
+}
+
+button:nth-child(3) {
+  background-color: hsla(193, 91%, 44%, 0.862);
+}
+
+button:not(:hover) {
+  background-color: rgba(32, 31, 29, 0.632);
+  color: aliceblue;
+  transition: all 600ms ease-in-out;
+}

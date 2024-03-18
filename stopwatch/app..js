@@ -13,7 +13,7 @@ function start() {
         
     }
 }
-
+        
 function stop() { 
     if (isRunning) {
         clearInterval(timer)

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Error handling</title>
+  </head>
+  <body>
+    <!-- throws try finally -->
+    <script>
+      try {
+        const divident = Number(window.prompt("enter The Divider"));
+        const diviser = Number(window.prompt("enter The Diviser"));
+
+        if (diviser == 0) {
+          throw new Error("Cant Divide By 0");
+        }
+
+        if (isNaN(divident) || isNaN(diviser)) {
+          throw new Error("enter a number ");
+        }
+        const result = divident / diviser;
+        console.log(result);
+      }
+      
+      catch (error) {
+        console.error(error);
+      }
+      
+      finally {
+        console.log("i always execute");
+      }
+      console.log("You reached The end ");
+    </script>
+  </body>
+</html>

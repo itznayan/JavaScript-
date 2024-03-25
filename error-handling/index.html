@@ -9,17 +9,17 @@
     <!-- throws try finally -->
     <script>
       try {
-        const divident = Number(window.prompt("enter The Divider"));
+        const divider = Number(window.prompt("enter The Divider"));
         const diviser = Number(window.prompt("enter The Diviser"));
 
         if (diviser == 0) {
           throw new Error("Cant Divide By 0");
         }
 
-        if (isNaN(divident) || isNaN(diviser)) {
+        if (isNaN(divider) || isNaN(diviser)) {
           throw new Error("enter a number ");
         }
-        const result = divident / diviser;
+        const result = divider / diviser;
         console.log(result);
       }
       
